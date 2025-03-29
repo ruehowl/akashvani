@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>പരിപാടി വിവരങ്ങൾ - ആകാശവാണി കൊച്ചി FM</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="manifest" href="../manifest.json">
+</head>
+<body>
+    <header>
+        <h1>ആകാശവാണി കൊച്ചി FM</h1>
+        <a href="../" class="back-button" onclick="pauseLiveBroadcast()">← Back to Home</a>
+    </header>
+
+    <main class="program-details-container">
+        </main>
+
+    <footer>
+        <div class="player-container">
+            <audio id="bottomPlayer" controls preload="none"></audio>
+            <p id="currentProgramTitle">തിരഞ്ഞെടുത്ത പരിപാടി</p>
+        </div>
+    </footer>
+
+    <script>
+        function pauseLiveBroadcast() {
+            const bottomPlayer = document.getElementById('bottomPlayer');
+            if (!bottomPlayer.paused) {
+                bottomPlayer.pause();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const detailsContainer = document.querySelector('.program-details-container');
+            const bottomPlayer = document.getElementById('bottomPlayer');
+            const currentProgramTitleDisplay = document.getElementById('currentProgramTitle');
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const programId = urlParams.get('id');
+
+            function playAudio(audioUrl, title) {
+                if (Hls.isSupported()) {
+                    const hls = new Hls();
+                    hls.loadSource(audioUrl);
+                    hls.attachMedia(bottomPlayer);
+                    hls.on(Hls.Events.MANIFEST_PARSED, () => {
+                        console.log('HLS manifest parsed for past program.');
+                        bottomPlayer.play();
+                    });
+                    hls.on(Hls.Events.ERROR, (event, data) => {
+                        console.error('HLS error occurred for past program:', event, data);
+                        bottomPlayer.src = audioUrl;
+                        bottomPlayer.play().catch(error => console.error("Error playing audio:", error));
+                    });
+                } else if (bottomPlayer.canPlayType('audio/mpeg') || bottomPlayer.canPlayType('audio/aac')) {
+                    bottomPlayer.src = audioUrl;
+                    bottomPlayer.play().catch(error => console.error("Error playing audio:", error));
+                } else {
+                    console.error('Audio format not supported.');
+                }
+                currentProgramTitleDisplay.textContent = title;
+            }
+
+            fetch('../data/programs.yaml')
+                .then(response => response.text())
+                .then(yamlData => {
+                    const programs = jsyaml.load(yamlData);
+                    const program = programs.find(p => p.id === programId);
+
+                    if (program) {
+                        detailsContainer.innerHTML = `
+                            <h2>${program.title}</h2>
+                            <img src="../${program.thumbnail}" alt="${program.title}" style="width: 100%; max-width: 400px; margin-bottom: 1em;">
+                            <p>${program.description}</p>
+                            <button class="play-button" data-audio="${program.audio_url}" data-title="${program.title}">
+                                ▶️
+                            </button>
+                        `;
+
+                        const playButton = detailsContainer.querySelector('.play-button');
+                        if (playButton) {
+                            playButton.addEventListener('click', function() {
+                                const audioUrl = this.dataset.audio;
+                                const title = this.dataset.title;
+                                playAudio(audioUrl, title);
+                            });
+                        }
+                    } else {
+                        detailsContainer.innerHTML = '<p>പരിപാടി കണ്ടെത്താനായില്ല.</p>';
+                    }
+                })
+                .catch(error => console.error('Error loading program details:', error));
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</body>
+</html>

@@ -1,27 +1,123 @@
 body {
     font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     margin: 0;
+    padding-bottom: 80px; /* Adjust for fixed footer height */
     background-color: #f4f4f4;
+    color: #333;
 }
 
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
     text-align: center;
 }
 
-h1 {
-    color: #333;
-    margin-bottom: 15px;
+.program-list {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
 }
 
-audio {
+.program-tile {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.program-tile img {
     width: 100%;
-    max-width: 400px;
+    height: auto;
+    display: block;
+}
+
+.program-tile h3 {
+    padding: 0.5em;
+    margin: 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #eee;
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.player-container {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    align-items: center;
+    justify-content: space-between;
+}
+
+#playLiveButton {
+    padding: 0.8em 1.5em;
+    font-size: 1.2em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: auto; /* Align to the left */
+}
+
+#playLiveButton:hover {
+    background-color: #218838;
+}
+
+#currentProgramTitle {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: #555;
+}
+
+audio#bottomPlayer {
+    width: 100%; /* Make the player take full width */
+    height: 50px; /* Increase the height of the player */
+    margin-top: 0.5em;
+}
+
+/* Basic styling for program details page (pages/program_details.html) */
+.program-details-container {
+    padding: 1em;
+}
+
+.program-details-container h2 {
+    margin-top: 0;
+}
+
+.program-details-container .play-button {
+    padding: 0.8em 1.5em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.program-details-container .play-button:hover {
+    background-color: #0056b3;
+}
+
+.back-button {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1em;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.back-button:hover {
+    color: #0056b3;
 }

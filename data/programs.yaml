@@ -1,0 +1,30 @@
+- id: parkinsons_dbs
+  title: "പാർക്കിൻസൺസ് രോഗവും ഡിബിഎസ് ചികിത്സയും"
+  description: "പാർക്കിൻസൺസ് രോഗത്തിനുള്ള ഡീപ് ബ്രെയിൻ സ്റ്റിമുലേഷൻ ചികിത്സയെക്കുറിച്ചുള്ള വിവരങ്ങൾ."
+  audio_url: "audio/parkinsons_dbs.mp3"
+  thumbnail: "images/program_thumbnails/default.jpg"
+  date: "2025-03-28"
+- id: cusat_courses
+  title: "കുസാറ്റ് വിദേശഭാഷാ കോഴ്സുകൾ"
+  description: "കൊച്ചി ശാസ്ത്ര സാങ്കേതിക സർവ്വകലാശാലയിലെ വിദേശഭാഷാ കോഴ്സുകളെക്കുറിച്ചുള്ള അറിയിപ്പ്."
+  audio_url: "audio/cusat_courses.mp3"
+  thumbnail: "images/program_thumbnails/default.jpg"
+  date: "2025-03-28"
+- id: power_outage
+  title: "വൈദ്യുതി മുടക്കം അറിയിപ്പ്"
+  description: "തൃക്കാക്കര സെക്ഷനിലെ വൈദ്യുതി മുടക്കത്തെക്കുറിച്ചുള്ള അറിയിപ്പ്."
+  audio_url: "audio/power_outage.mp3"
+  thumbnail: "images/program_thumbnails/default.jpg"
+  date: "2025-03-28"
+- id: scholarship_announcement
+  title: "വിദ്യാഭ്യാസ സ്കോളർഷിപ്പ് അറിയിപ്പ്"
+  description: "വിദ്യാഭ്യാസ സ്കോളർഷിപ്പ് അപേക്ഷകളെക്കുറിച്ചുള്ള അറിയിപ്പ്."
+  audio_url: "audio/scholarship_announcement.mp3"
+  thumbnail: "images/program_thumbnails/default.jpg"
+  date: "2025-03-28"
+- id: govt_technical_hs_admission
+  title: "ഗവൺമെൻ്റ് ടെക്നിക്കൽ ഹൈസ്കൂൾ പ്രവേശനം"
+  description: "ഗവൺമെൻ്റ് ടെക്നിക്കൽ ഹൈസ്കൂളിലെ എട്ടാം ക്ലാസ് പ്രവേശനത്തെക്കുറിച്ചുള്ള അറിയിപ്പ്."
+  audio_url: "audio/govt_technical_hs_admission.mp3"
+  thumbnail: "images/program_thumbnails/default.jpg"
+  date: "2025-03-28"
