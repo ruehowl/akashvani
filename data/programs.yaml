@@ -28,3 +28,9 @@
   audio_url: "audio/govt_technical_hs_admission.mp3"
   thumbnail: "images/program_thumbnails/default.jpg"
   date: "2025-03-28"
+- id: youtube_example
+  title: "YouTube Example Program"
+  description: "This is an example program with a YouTube video."
+  audio_url: "https://www.youtube.com/watch?v=rtP9Kkahotk"
+  thumbnail: "images/program_thumbnails/default.jpg"
+  date: "2025-03-28"

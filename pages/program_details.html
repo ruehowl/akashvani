@@ -6,6 +6,30 @@
     <title>പരിപാടി വിവരങ്ങൾ - ആകാശവാണി കൊച്ചി FM</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="manifest" href="../manifest.json">
+    <style>
+        .play-button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .play-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .play-button:active {
+            background-color: #003f7f;
+            transform: scale(0.95);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -74,7 +98,7 @@
                             <img src="../${program.thumbnail}" alt="${program.title}" style="width: 100%; max-width: 400px; margin-bottom: 1em;">
                             <p>${program.description}</p>
                             <button class="play-button" data-audio="${program.audio_url}" data-title="${program.title}">
-                                ▶️
+                                ▶️ Play
                             </button>
                         `;
 

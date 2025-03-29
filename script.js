@@ -7,26 +7,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to play audio in the bottom player
     function playAudio(audioUrl, title) {
-        if (Hls.isSupported()) {
-            const hls = new Hls();
-            hls.loadSource(audioUrl);
-            hls.attachMedia(bottomPlayer);
-            hls.on(Hls.Events.MANIFEST_PARSED, () => {
-                console.log('HLS manifest parsed.');
-                bottomPlayer.play();
-            });
-            hls.on(Hls.Events.ERROR, (event, data) => {
-                console.error('HLS error occurred:', event, data);
+        const youtubeRegex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]{11})/;
+        const match = audioUrl.match(youtubeRegex);
+
+        const playerContainer = document.querySelector('.player-container');
+        const bottomPlayer = document.getElementById('bottomPlayer');
+        const currentProgramTitleDisplay = document.getElementById('currentProgramTitle');
+
+        if (match) {
+            // If it's a YouTube URL, embed the YouTube player
+            const videoId = match[1];
+            playerContainer.innerHTML = ''; // Clear existing content
+
+            const iframe = document.createElement('iframe');
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            iframe.width = '100%';
+            iframe.height = '315';
+            iframe.allow = 'autoplay; encrypted-media';
+            iframe.frameBorder = '0';
+
+            playerContainer.appendChild(iframe);
+            currentProgramTitleDisplay.textContent = title; // Update the title
+        } else {
+            // Default behavior for audio files
+            playerContainer.innerHTML = ''; // Clear existing content
+            playerContainer.appendChild(bottomPlayer); // Re-add the audio player
+
+            if (Hls.isSupported()) {
+                const hls = new Hls();
+                hls.loadSource(audioUrl);
+                hls.attachMedia(bottomPlayer);
+                hls.on(Hls.Events.MANIFEST_PARSED, () => {
+                    console.log('HLS manifest parsed.');
+                    bottomPlayer.play();
+                });
+                hls.on(Hls.Events.ERROR, (event, data) => {
+                    console.error('HLS error occurred:', event, data);
+                    bottomPlayer.src = audioUrl;
+                    bottomPlayer.play().catch(error => console.error("Error playing audio:", error));
+                });
+            } else if (bottomPlayer.canPlayType('audio/mpeg') || bottomPlayer.canPlayType('audio/aac')) {
                 bottomPlayer.src = audioUrl;
                 bottomPlayer.play().catch(error => console.error("Error playing audio:", error));
-            });
-        } else if (bottomPlayer.canPlayType('audio/mpeg') || bottomPlayer.canPlayType('audio/aac')) {
-            bottomPlayer.src = audioUrl;
-            bottomPlayer.play().catch(error => console.error("Error playing audio:", error));
-        } else {
-            console.error('Audio format not supported.');
+            } else {
+                console.error('Audio format not supported.');
+            }
+            currentProgramTitleDisplay.textContent = title; // Update the title
         }
-        currentProgramTitleDisplay.textContent = title;
     }
 
     // Event listener for the "Play Live Broadcast" button
