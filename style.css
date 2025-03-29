@@ -62,7 +62,7 @@ footer {
 #playLiveButton {
     padding: 0.8em 1.5em;
     font-size: 1.2em;
-    background-color: #28a745;
+    background-color: #1e7e34; /* Darker shade of green */
     color: white;
     border: none;
     border-radius: 5px;
@@ -71,7 +71,7 @@ footer {
 }
 
 #playLiveButton:hover {
-    background-color: #218838;
+    background-color: #155724; /* Even darker shade of green for hover */
 }
 
 #currentProgramTitle {

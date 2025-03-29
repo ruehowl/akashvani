@@ -14,6 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const bottomPlayer = document.getElementById('bottomPlayer');
         const currentProgramTitleDisplay = document.getElementById('currentProgramTitle');
 
+        if (!currentProgramTitleDisplay) {
+            console.warn('Element with ID "currentProgramTitle" not found in the DOM. Skipping title update.');
+            return; // Safely exit the function if the element is not found
+        }
+
+        currentProgramTitleDisplay.textContent = title; // Update the title
+
         if (match) {
             // If it's a YouTube URL, embed the YouTube player
             const videoId = match[1];
@@ -27,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
             iframe.frameBorder = '0';
 
             playerContainer.appendChild(iframe);
-            currentProgramTitleDisplay.textContent = title; // Update the title
         } else {
             // Default behavior for audio files
             playerContainer.innerHTML = ''; // Clear existing content
@@ -38,11 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 hls.loadSource(audioUrl);
                 hls.attachMedia(bottomPlayer);
                 hls.on(Hls.Events.MANIFEST_PARSED, () => {
-                    console.log('HLS manifest parsed.');
+                    console.log('HLS manifest parsed for past program.');
                     bottomPlayer.play();
                 });
                 hls.on(Hls.Events.ERROR, (event, data) => {
-                    console.error('HLS error occurred:', event, data);
+                    console.error('HLS error occurred for past program:', event, data);
                     bottomPlayer.src = audioUrl;
                     bottomPlayer.play().catch(error => console.error("Error playing audio:", error));
                 });
@@ -52,7 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 console.error('Audio format not supported.');
             }
-            currentProgramTitleDisplay.textContent = title; // Update the title
         }
     }
 
