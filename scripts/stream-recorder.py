@@ -35,20 +35,28 @@ def record_chunk():
     output_file = os.path.join(OUTPUT_DIR, f"recording_{timestamp}.mp3")
     logging.info(f"Starting new recording: {output_file}")
 
-    try:
-        record_options = f":sout=#transcode{{acodec=mp3,ab=128}}:file{{dst='{output_file}'}}"
-        record_media = instance.media_new(STREAM_URL, record_options)
-        record_player = instance.media_player_new()
-        record_player.set_media(record_media)
-        record_player.play()
+    retries = 3  # Number of retries in case of failure
+    for attempt in range(1, retries + 1):
+        try:
+            record_options = f":sout=#transcode{{acodec=mp3,ab=128}}:file{{dst='{output_file}'}}"
+            record_media = instance.media_new(STREAM_URL, record_options)
+            record_player = instance.media_player_new()
+            record_player.set_media(record_media)
+            record_player.play()
 
-        time.sleep(CHUNK_DURATION)
-        record_player.stop()
-        record_player.release()
-        logging.info(f"Recording finished successfully: {output_file}")
-    except Exception as e:
-        logging.error(f"Failed during recording: {e}")
-        raise
+            time.sleep(CHUNK_DURATION)
+            record_player.stop()
+            record_player.release()
+            logging.info(f"Recording finished successfully: {output_file}")
+            break  # Exit the retry loop if successful
+        except Exception as e:
+            logging.error(f"Attempt {attempt} failed during recording: {e}")
+            if attempt == retries:
+                logging.error("Max retries reached. Skipping this recording.")
+                raise
+            else:
+                logging.info("Retrying...")
+                time.sleep(5)  # Wait before retrying
 
 if __name__ == "__main__":
     # Align to the next interval minus 1 minute
