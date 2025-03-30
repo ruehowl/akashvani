@@ -24,40 +24,22 @@ document.addEventListener('DOMContentLoaded', () => {
         if (match) {
             // If it's a YouTube URL, embed the YouTube player
             const videoId = match[1];
-            playerContainer.innerHTML = ''; // Clear existing content
-
-            const iframe = document.createElement('iframe');
-            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-            iframe.width = '100%';
-            iframe.height = '315';
-            iframe.allow = 'autoplay; encrypted-media';
-            iframe.frameBorder = '0';
-
-            playerContainer.appendChild(iframe);
+            const detailsContainer = document.querySelector('.details-container');
+            detailsContainer.innerHTML = `
+                <h2>${title}</h2>
+                <iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" 
+                        width="100%" height="315" allow="autoplay; encrypted-media" 
+                        frameborder="0" style="display: block; margin: 0 auto;"></iframe>
+                <p>Program description goes here.</p>
+            `;
         } else {
-            // Default behavior for audio files
-            playerContainer.innerHTML = ''; // Clear existing content
-            playerContainer.appendChild(bottomPlayer); // Re-add the audio player
-
-            if (Hls.isSupported()) {
-                const hls = new Hls();
-                hls.loadSource(audioUrl);
-                hls.attachMedia(bottomPlayer);
-                hls.on(Hls.Events.MANIFEST_PARSED, () => {
-                    console.log('HLS manifest parsed for past program.');
-                    bottomPlayer.play();
-                });
-                hls.on(Hls.Events.ERROR, (event, data) => {
-                    console.error('HLS error occurred for past program:', event, data);
-                    bottomPlayer.src = audioUrl;
-                    bottomPlayer.play().catch(error => console.error("Error playing audio:", error));
-                });
-            } else if (bottomPlayer.canPlayType('audio/mpeg') || bottomPlayer.canPlayType('audio/aac')) {
-                bottomPlayer.src = audioUrl;
-                bottomPlayer.play().catch(error => console.error("Error playing audio:", error));
-            } else {
-                console.error('Audio format not supported.');
-            }
+            const detailsContainer = document.querySelector('.details-container');
+            detailsContainer.innerHTML = `
+                <h2>${title}</h2>
+                <img src="../path/to/thumbnail.jpg" alt="${title}" 
+                     style="width: 100%; max-width: 400px; margin-bottom: 1em;">
+                <p>Program description goes here.</p>
+            `;
         }
     }
 

@@ -86,6 +86,11 @@ audio#bottomPlayer {
     margin-top: 0.5em;
 }
 
+iframe {
+    display: block;
+    margin: 0 auto; /* Center the iframe horizontally */
+}
+
 /* Basic styling for program details page (pages/program_details.html) */
 .program-details-container {
     padding: 1em;
