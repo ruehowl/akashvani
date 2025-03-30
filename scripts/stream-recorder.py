@@ -65,19 +65,15 @@ if __name__ == "__main__":
 
     try:
         logging.info("Stream recorder started.")
-        while True:
-            now = datetime.now()
-            if now >= next_chunk_time:
-                logging.info(f"Starting recording process at {now}.")
-                record_chunk()
-                logging.info("Recording process completed.")
-                # Schedule the next chunk
-                next_chunk_time += timedelta(minutes=INTERVAL_DURATION)
-            else:
-                logging.info(f"Waiting for the next recording interval at {next_chunk_time}. Current time: {now}.")
-            
-            # Sleep for a short duration to avoid busy-waiting
-            time.sleep(10)
+        logging.info(f"Waiting for the next recording interval at {next_chunk_time}. Current time: {now}.")
+        
+        # Wait until the next recording interval
+        while datetime.now() < next_chunk_time:
+            time.sleep(10)  # Sleep for a short duration to avoid busy-waiting
+
+        logging.info(f"Starting recording process at {datetime.now()}.")
+        record_chunk()
+        logging.info("Recording process completed. Exiting.")
     except KeyboardInterrupt:
         logging.warning("Interrupted by user. Stopping recording...")
         instance.release()
