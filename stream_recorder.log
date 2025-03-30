@@ -1,0 +1,6 @@
+2025-03-30 12:34:45,456 - INFO - Stream recorder started.
+2025-03-30 12:34:45,456 - INFO - Waiting for the next recording interval at 2025-03-30 12:35:00. Current time: 2025-03-30 12:34:45.456752.
+2025-03-30 12:34:55,461 - INFO - Waiting for the next recording interval at 2025-03-30 12:35:00. Current time: 2025-03-30 12:34:55.461850.
+2025-03-30 12:35:05,466 - INFO - Starting recording process at 2025-03-30 12:35:05.466503.
+2025-03-30 12:35:05,466 - INFO - Starting new recording: radio_recordings/recording_20250330_123505.mp3
+2025-03-30 12:35:13,989 - WARNING - Interrupted by user. Stopping recording...

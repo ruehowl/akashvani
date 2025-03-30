@@ -12,28 +12,23 @@ OUTPUT_DIR = "radio_recordings"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Interval duration for scheduling recordings (in minutes)
-INTERVAL_DURATION = 30
+INTERVAL_DURATION = 3
 
 # Recording chunk duration (in seconds)
 CHUNK_DURATION = (INTERVAL_DURATION + 2) * 60  # Interval duration + 2 minutes buffer
 
 # Configure logging
 logging.basicConfig(
-    filename="stream_recorder.log",
     level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler("stream_recorder.log"),
+        logging.StreamHandler()  # Add this to log to the console
+    ]
 )
 
 # Create VLC instance
 instance = vlc.Instance()
-
-# Create media player for playback
-playback_player = instance.media_player_new()
-playback_media = instance.media_new(STREAM_URL)
-playback_player.set_media(playback_media)
-
-# Play the stream
-playback_player.play()
 
 def record_chunk():
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -62,22 +57,22 @@ if __name__ == "__main__":
 
     try:
         logging.info("Stream recorder started.")
-        logging.info(f"Waiting for the next recording interval at {next_chunk_time}.")
-
-        if datetime.now() >= next_chunk_time:
-            logging.info("Starting recording process.")
-            record_chunk()
-            logging.info("Recording process completed. Stopping playback and releasing resources.")
-            playback_player.stop()
-            playback_player.release()
-            instance.release()
+        while True:
+            now = datetime.now()
+            if now >= next_chunk_time:
+                logging.info(f"Starting recording process at {now}.")
+                record_chunk()
+                logging.info("Recording process completed.")
+                # Schedule the next chunk
+                next_chunk_time += timedelta(minutes=INTERVAL_DURATION)
+            else:
+                logging.info(f"Waiting for the next recording interval at {next_chunk_time}. Current time: {now}.")
+            
+            # Sleep for a short duration to avoid busy-waiting
+            time.sleep(10)
     except KeyboardInterrupt:
-        logging.warning("Interrupted by user. Stopping playback and recording...")
-        playback_player.stop()
-        playback_player.release()
+        logging.warning("Interrupted by user. Stopping recording...")
         instance.release()
     except Exception as e:
         logging.error(f"Unexpected error: {e}")
-        playback_player.stop()
-        playback_player.release()
         instance.release()
