@@ -37,7 +37,7 @@ jobs:
         run: python scripts/stream-recorder.py
 
       - name: Upload recording as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: recorded-files
           path: radio_recordings/
