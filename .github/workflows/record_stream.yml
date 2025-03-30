@@ -1,0 +1,37 @@
+name: Record Streaming
+
+on:
+  schedule:
+    - cron: "55,25 22-15 * * *" # 4:55 AM to 9:55 PM IST (IST is UTC+5:30, so 22-15 UTC)
+
+jobs:
+  record-stream:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+          cache: "pip" # Enable pip caching for faster dependency installation
+
+      - name: Install VLC dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y vlc
+
+      - name: Install Python dependencies
+        run: |
+          pip install python-vlc
+
+      - name: Run recording script
+        run: python scripts/stream-recorder.py
+
+      - name: Upload recording as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: recorded-files
+          path: radio_recordings/
