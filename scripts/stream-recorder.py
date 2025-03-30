@@ -27,8 +27,8 @@ logging.basicConfig(
     ]
 )
 
-# Create VLC instance
-instance = vlc.Instance()
+# Create VLC instance with no audio output
+instance = vlc.Instance("--no-audio")  # Add "--no-audio" to disable audio output
 
 def record_chunk():
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
