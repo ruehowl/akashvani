@@ -2,7 +2,9 @@ name: Record Streaming
 
 on:
   schedule:
-    - cron: "55,25 22-15 * * *" # 4:55 AM to 9:55 PM IST (IST is UTC+5:30, so 22-15 UTC)
+    # Split into two valid cron expressions
+    - cron: "55,25 22-23 * * *" # 4:55 AM to 5:55 AM IST
+    - cron: "55,25 0-15 * * *"  # 6:25 AM to 9:55 PM IST
 
 jobs:
   record-stream:
