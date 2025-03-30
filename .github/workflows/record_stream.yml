@@ -28,10 +28,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          pip install python-vlc
-
-      - name: Ensure radio_recordings directory exists
-        run: mkdir -p radio_recordings
+          pip install -r requirements.txt
 
       - name: Run recording script
         run: python scripts/stream-recorder.py
