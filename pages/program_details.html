@@ -59,6 +59,11 @@
             const detailsContainer = document.querySelector('.program-details-container');
             const bottomPlayer = document.getElementById('bottomPlayer');
             const currentProgramTitleDisplay = document.getElementById('currentProgramTitle');
+            const liveStreamUrl = 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio045/playlist.m3u8'; // Live stream URL
+
+            // Set the bottom player to play the live broadcast by default
+            bottomPlayer.src = liveStreamUrl;
+            currentProgramTitleDisplay.textContent = 'തത്സമയ സംപ്രേക്ഷണം';
 
             const urlParams = new URLSearchParams(window.location.search);
             const programId = urlParams.get('id');
@@ -67,24 +72,20 @@
                 const youtubeRegex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]{11})/;
                 const match = audioUrl.match(youtubeRegex);
 
-                const playerContainer = document.querySelector('.player-container');
-                const bottomPlayer = document.getElementById('bottomPlayer');
-                const currentProgramTitleDisplay = document.getElementById('currentProgramTitle');
-
                 if (match) {
-                    // If it's a YouTube URL, embed the YouTube player
+                    // If it's a YouTube URL, embed the YouTube player without autoplay
                     const videoId = match[1];
                     detailsContainer.innerHTML = `
-                        <h2>${program.title}</h2>
-                        <iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" 
-                                width="100%" height="315" allow="autoplay; encrypted-media" 
+                        <h2>${title}</h2>
+                        <iframe src="https://www.youtube.com/embed/${videoId}" 
+                                width="100%" height="315" allow="encrypted-media" 
                                 frameborder="0" style="display: block; margin: 0 auto;"></iframe>
                         <p>${program.description}</p>
                     `;
                 } else {
                     detailsContainer.innerHTML = `
-                        <h2>${program.title}</h2>
-                        <img src="../${program.thumbnail}" alt="${program.title}" 
+                        <h2>${title}</h2>
+                        <img src="../${program.thumbnail}" alt="${title}" 
                              style="width: 100%; max-width: 400px; margin-bottom: 1em;">
                         <p>${program.description}</p>
                     `;
@@ -102,12 +103,12 @@
                         const match = program.audio_url.match(youtubeRegex);
 
                         if (match) {
-                            // If it's a YouTube URL, embed the YouTube player
+                            // Embed YouTube player without autoplay
                             const videoId = match[1];
                             detailsContainer.innerHTML = `
                                 <h2>${program.title}</h2>
-                                <iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" 
-                                        width="100%" height="315" allow="autoplay; encrypted-media" 
+                                <iframe src="https://www.youtube.com/embed/${videoId}" 
+                                        width="100%" height="315" allow="encrypted-media" 
                                         frameborder="0" style="display: block; margin: 0 auto;"></iframe>
                                 <p>${program.description}</p>
                             `;
