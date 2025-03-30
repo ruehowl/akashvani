@@ -5,6 +5,7 @@ on:
     # Split into two valid cron expressions
     - cron: "55,25 22-23 * * *" # 4:55 AM to 5:55 AM IST
     - cron: "55,25 0-15 * * *"  # 6:25 AM to 9:55 PM IST
+  workflow_dispatch: # Add manual trigger
 
 jobs:
   record-stream:
