@@ -30,6 +30,9 @@ jobs:
         run: |
           pip install python-vlc
 
+      - name: Ensure radio_recordings directory exists
+        run: mkdir -p radio_recordings
+
       - name: Run recording script
         run: python scripts/stream-recorder.py
 
