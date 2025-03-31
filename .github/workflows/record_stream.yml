@@ -50,6 +50,9 @@ jobs:
       - name: Set up client secrets
         run: echo "${{ secrets.CLIENT_SECRETS }}" | base64 -d > client_secrets.json
 
+      - name: Set up OAuth token
+        run: echo "${{ secrets.OAUTH_TOKEN_PICKLE }}" | base64 -d > token.pickle
+
       - name: Upload video to YouTube
         run: |
           python scripts/upload_to_youtube.py \

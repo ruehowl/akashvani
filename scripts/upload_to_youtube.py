@@ -10,19 +10,21 @@ import pickle
 SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
 
 def authenticate_youtube():
-    """Authenticate the user and return the YouTube API client."""
+    """Authenticate the user using a pre-generated token.pickle file."""
     credentials = None
+
+    # Check if the token.pickle file exists
     if os.path.exists("token.pickle"):
         with open("token.pickle", "rb") as token:
             credentials = pickle.load(token)
+
+    # Refresh the token if it's expired
     if not credentials or not credentials.valid:
         if credentials and credentials.expired and credentials.refresh_token:
             credentials.refresh(Request())
         else:
-            flow = InstalledAppFlow.from_client_secrets_file("client_secrets.json", SCOPES)
-            credentials = flow.run_local_server(port=0)  # Use run_local_server for authentication
-        with open("token.pickle", "wb") as token:
-            pickle.dump(credentials, token)
+            raise Exception("Invalid or expired credentials. Please re-authenticate and generate a new token.pickle.")
+
     return build("youtube", "v3", credentials=credentials)
 
 def upload_video(youtube, video_file, title, description, category_id, tags):
