@@ -32,7 +32,7 @@ instance = vlc.Instance("--no-audio")  # Add "--no-audio" to disable audio outpu
 
 def record_chunk():
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_file = os.path.join(OUTPUT_DIR, f"recording_{timestamp}.mp3")
+    output_file = os.path.join(OUTPUT_DIR, f"latest_recording.mp3")
     logging.info(f"Starting new recording: {output_file}")
 
     retries = 3  # Number of retries in case of failure
