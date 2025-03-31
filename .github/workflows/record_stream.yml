@@ -9,6 +9,7 @@ on:
 jobs:
   record-stream:
     runs-on: ubuntu-latest
+    environment: akashvani-kochi
 
     steps:
       - name: Checkout repository
