@@ -45,3 +45,14 @@ jobs:
         with:
           name: latest_recording
           path: videos/latest_recording.mp4
+
+      - name: Set up client secrets
+        run: echo "${{ secrets.CLIENT_SECRETS }}" > client_secrets.json
+
+      - name: Upload video to YouTube
+        run: |
+          python scripts/upload_to_youtube.py \
+            --video_file videos/latest_recording.mp4 \
+            --title "Latest Recording" \
+            --description "This is the latest recording from Akashvani Kochi." \
+            --tags "radio,recording,akashvani,kochi"
