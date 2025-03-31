@@ -47,7 +47,7 @@ jobs:
           path: videos/latest_recording.mp4
 
       - name: Set up client secrets
-        run: echo "${{ secrets.CLIENT_SECRETS }}" > client_secrets.json
+        run: echo "${{ secrets.CLIENT_SECRETS }}" | base64 -d > client_secrets.json
 
       - name: Upload video to YouTube
         run: |
