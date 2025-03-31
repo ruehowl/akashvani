@@ -12,7 +12,7 @@ OUTPUT_DIR = "radio_recordings"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Interval duration for scheduling recordings (in minutes)
-INTERVAL_DURATION = 3
+INTERVAL_DURATION = 30
 
 # Recording chunk duration (in seconds)
 CHUNK_DURATION = (INTERVAL_DURATION + 2) * 60  # Interval duration + 2 minutes buffer
