@@ -4,3 +4,9 @@
 2025-03-30 12:35:05,466 - INFO - Starting recording process at 2025-03-30 12:35:05.466503.
 2025-03-30 12:35:05,466 - INFO - Starting new recording: radio_recordings/recording_20250330_123505.mp3
 2025-03-30 12:35:13,989 - WARNING - Interrupted by user. Stopping recording...
+2025-03-30 21:16:33,999 - INFO - Stream recorder started.
+2025-03-30 21:16:33,999 - INFO - Waiting for the next recording interval at 2025-03-30 21:17:00. Current time: 2025-03-30 21:16:33.998998.
+2025-03-30 21:17:04,022 - INFO - Starting recording process at 2025-03-30 21:17:04.022444.
+2025-03-30 21:17:04,023 - INFO - Starting new recording: radio_recordings/recording_20250330_211704.mp3
+2025-03-30 21:22:04,087 - INFO - Recording finished successfully: radio_recordings/recording_20250330_211704.mp3
+2025-03-30 21:22:04,088 - INFO - Recording process completed. Exiting.
