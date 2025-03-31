@@ -32,8 +32,16 @@ jobs:
       - name: Run recording script
         run: python scripts/stream-recorder.py
 
-      - name: Upload recording as artifact
+      - name: Convert audio to video
+        run: |
+          python scripts/to-video.py \
+            --audio_filepath radio_recordings/latest_recording.mp3 \
+            --static_image images/AIR-KOCHI-FM-102.jpg \
+            --output_video_directory videos \
+            --output_video_name latest_recording.mp4
+
+      - name: Upload video as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: recorded-files
-          path: radio_recordings/
+          name: latest_recording
+          path: videos/latest_recording.mp4
