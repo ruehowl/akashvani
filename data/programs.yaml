@@ -28,9 +28,9 @@
   audio_url: "audio/govt_technical_hs_admission.mp3"
   thumbnail: "images/program_thumbnails/default.jpg"
   date: "2025-03-28"
-- id: youtube_example
-  title: "YouTube Example Program"
-  description: "This is an example program with a YouTube video."
-  audio_url: "https://www.youtube.com/watch?v=rtP9Kkahotk"
+- id: plastic_surgery_interview
+  title: "പ്രകാശധാര: പ്ലാസ്റ്റിക് സർജറി"
+  description: "തിരുവനന്തപുരം ഗവൺമെൻറ് മെഡിക്കൽ കോളേജിലെ പ്ലാസ്റ്റിക് സർജറി വിഭാഗം പ്രൊഫസർ ഡോക്ടർ പ്രേംലാൽ എപിയുമായി എം കെ ദിലീപ് നടത്തുന്ന അഭിമുഖം."
+  audio_url: "https://youtu.be/Zz0enrtBq2Y"
   thumbnail: "images/program_thumbnails/default.jpg"
   date: "2025-03-28"
