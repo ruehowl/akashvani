@@ -40,3 +40,69 @@
   audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=MmjYMJDNrDY'
   thumbnail: images/program_thumbnails/default.jpg
   date: '2025-04-01'
+- id: radio_health-2025-04-01
+  title: റേഡിയോ ഹെൽത്ത്
+  description: ഹോർമോൺ വ്യതിയാനവും സ്ത്രീകളിലെ വന്ധ്യതയും എന്ന വിഷയത്തിൽ തിരുവനന്തപുരം ഗവൺമെൻറ് മെഡിക്കൽ കോളേജിലെ എൻഡോക്രൈനോളജി വിഭാഗം അസോസിയേറ്റ് പ്രൊഫസർ ഡോക്ടർ അഭിലാഷുമായുള്ള ചർച്ച.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=SG-RDRUyygQ'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-01'
+- id: local_news-2025-04-01
+  title: പ്രാദേശിക വാർത്തകൾ
+  description: രാജ്യത്തെ പണമിടപാട് അടിസ്ഥാന സൗകര്യ ആധുനിക വൽക്കരണം, ആശാ പ്രവർത്തകരുടെ പ്രശ്നങ്ങൾ, ഓട്ടിസം ബോധവൽക്കരണ ദിനം, കേരള സർവകലാശാല ഉത്തരകടലാസുകൾ നഷ്ടപ്പെട്ട സംഭവം,  കുടുംബശ്രീ അരങ്ങ് 2025, ധവള വിപ്ലവം, വികസിത് ഭാരത് യൂത്ത് പാർലമെൻറ്,  ഐഎസ്എൽ ഫുട്ബോൾ, ഇരവികുളം ദേശീയോദ്യാനം, കണ്ണൂർ ജില്ലയിലെ ബാങ്ക് വായ്പ, ആകാശവാണി തിരുവനന്തപുരത്തിന്റെ 75 ആം വാർഷികം, കുടിവെള്ള വിതരണം മുടക്കം, സിപിഐഎമ്മിന്റെ പാർട്ടി കോൺഗ്രസ്, ശബരിമല നടതുറപ്പ്, പൈങ്കുനി ഉത്ര മഹോത്സവം, സി ഐഎസ്എഫ് സ്ഥാപക ദിനം, ആകാശവാണി പാർട്ട് ടൈം കറസ്പോണ്ടന്റ് നിയമനം തുടങ്ങിയ വാർത്തകൾ.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=Rd25mo8I6fE'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-01'
+- id: prakasa_dhara_interview-2025-04-01
+  title: 'പ്രകാശധാര: പ്ലാസ്റ്റിക് സർജറി'
+  description: തിരുവനന്തപുരം ഗവൺമെൻറ് മെഡിക്കൽ കോളേജിലെ പ്ലാസ്റ്റിക് സർജറി വിഭാഗം പ്രൊഫസർ ഡോക്ടർ പ്രേംലാൽ എപിയുമായി എം കെ ദിലീപ് നടത്തുന്ന അഭിമുഖം.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=MOKfaGqaGik'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-01'
+- id: pradeshika_varthakal-2025-04-01
+  title: പ്രാദേശിക വാർത്തകൾ
+  description: രാജ്യത്തെ പണമിടപാട് സൗകര്യങ്ങൾ, ആശാപ്രവർത്തകരുടെ പ്രശ്നങ്ങൾ, ഓട്ടിസം ബോധവൽക്കരണം, കേരള സർവകലാശാല ഉത്തരകടലാസുകൾ നഷ്ടം, ഇരവികുളം ദേശീയോദ്യാനം, ഐഎസ്എൽ ഫുട്ബോൾ, കണ്ണൂർ ജില്ലയിലെ ബാങ്ക് വായ്പ, ആകാശവാണി തിരുവനന്തപുരത്തിന്റെ വാർഷികം, തിരുവനന്തപുരത്ത് കുടിവെള്ള വിതരണം മുടക്കം, സിപിഐഎമ്മിന്റെ പാർട്ടി കോൺഗ്രസ്, ശബരിമല നടതുറപ്പ്, പത്മനാഭസ്വാമി ക്ഷേത്രത്തിലെ പൈങ്കുനി ഉത്സവം, കോസ്റ്റൽ സൈക്ലോത്തോൺ, ആകാശവാണി കോട്ടയത്ത് പാർട്ട് ടൈം കറസ്പോണ്ടന്റ് നിയമനം, ഓഹരി വിപണി.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=9glrSm7HQzQ'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-01'
+- id: plastic_surgery_interview-2025-04-01
+  title: പ്ലാസ്റ്റിക് സർജറി അറിയേണ്ടതെല്ലാം
+  description: തിരുവനന്തപുരം ഗവൺമെൻറ് മെഡിക്കൽ കോളേജിലെ പ്ലാസ്റ്റിക് സർജറി വിഭാഗം പ്രൊഫസർ ഡോക്ടർ പ്രേംലാൽ എപിയുമായുള്ള അഭിമുഖം.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=5_sQUUtP2ZE'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-01'
+- id: varthakal_part2-2025-04-01
+  title: വാർത്തകൾ
+  description: ഡിജിറ്റൽ പണമിടപാടുകൾ, ചിലി പ്രസിഡന്റിന്റെ ഇന്ത്യ സന്ദർശനം, നക്സൽ വിരുദ്ധ നടപടികൾ, ഇന്ത്യയുടെ സാമ്പത്തിക വളർച്ച, ആശാപ്രവർത്തകരുടെ പ്രശ്നങ്ങൾ, ഐപിഎൽ, ഐഎസ്എൽ, യുഎസ് - ഹൂദി സംഘർഷം, ഓപ്പറേഷൻ ബ്രഹ്മ, മ്യാന്മറിലെ ഭൂകമ്പം, എൽപിജി വില, താപനില, വടക്കുകിഴക്കൻ സംസ്ഥാനങ്ങൾ, മധ്യപ്രദേശിൽ മദ്യനിരോധനം, ബജറ്റ് നിരക്ക് മാറ്റങ്ങൾ, കേന്ദ്രസർക്കാർ പെൻഷൻ പദ്ധതി.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=IY8TP0ji7sI'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-01'
+- id: umang-2025-04-01
+  title: ഉമംഗ്
+  description: വിചാരങ്ങൾ, ശ്രോതാക്കളുടെ സന്ദേശങ്ങൾ, യെ ഭി ജാനിയെ എന്ന പംക്തിയിൽ സ്ട്രെഗി എന്ന ഇറ്റാലിയൻ പാരമ്പര്യത്തെക്കുറിച്ചുള്ള ചർച്ച.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=m4a2dmL3c6E'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-01'
+- id: thap_roti_thap_dal-2025-04-01
+  title: തപ്പ് റൊട്ടി തപ്പ് ദാൽ
+  description: റൊട്ടി, ദാൽ എന്നിവ ഉണ്ടാക്കുന്നതിനെക്കുറിച്ചുള്ള കുട്ടികളുടെ നാടകം.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=rHLdyGjTktM'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-01'
+- id: bagh_ki_sair-2025-04-01
+  title: ബാഘ് കി സൈർ
+  description: മാനു ബില്ലി എന്ന പൂച്ചയുടെയും അവളുടെ സുഹൃത്തുക്കളുടെയും കഥ.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=k5pKDs0JvZY'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-01'
+- id: bag_ki_sair-2025-04-01
+  title: ബാഗ് കി സൈർ
+  description: മാനു പൂച്ച, ചിന്റു കുരങ്ങ്, ബന്റി മുയൽ, മുന്മുൻ ആട്ടിൻകുട്ടി എന്നിവരുടെ കഥ.  സ്നേഹവും സൗഹൃദവും പ്രകൃതി സംരക്ഷണവും പ്രമേയമാക്കുന്നു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=Ru5udjGu8a0'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-01'
+- id: krishi-2025-04-01
+  title: കൃഷി
+  description: കൃഷി സംബന്ധമായ  വിവരങ്ങൾ.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=ImfxhtzIdgU'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-01'
