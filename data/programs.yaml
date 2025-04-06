@@ -1,33 +1,3 @@
-- id: parkinsons_dbs
-  title: പാർക്കിൻസൺസ് രോഗവും ഡിബിഎസ് ചികിത്സയും
-  description: പാർക്കിൻസൺസ് രോഗത്തിനുള്ള ഡീപ് ബ്രെയിൻ സ്റ്റിമുലേഷൻ ചികിത്സയെക്കുറിച്ചുള്ള വിവരങ്ങൾ.
-  audio_url: audio/parkinsons_dbs.mp3
-  thumbnail: images/program_thumbnails/default.jpg
-  date: '2025-03-28'
-- id: cusat_courses
-  title: കുസാറ്റ് വിദേശഭാഷാ കോഴ്സുകൾ
-  description: കൊച്ചി ശാസ്ത്ര സാങ്കേതിക സർവ്വകലാശാലയിലെ വിദേശഭാഷാ കോഴ്സുകളെക്കുറിച്ചുള്ള അറിയിപ്പ്.
-  audio_url: audio/cusat_courses.mp3
-  thumbnail: images/program_thumbnails/default.jpg
-  date: '2025-03-28'
-- id: power_outage
-  title: വൈദ്യുതി മുടക്കം അറിയിപ്പ്
-  description: തൃക്കാക്കര സെക്ഷനിലെ വൈദ്യുതി മുടക്കത്തെക്കുറിച്ചുള്ള അറിയിപ്പ്.
-  audio_url: audio/power_outage.mp3
-  thumbnail: images/program_thumbnails/default.jpg
-  date: '2025-03-28'
-- id: scholarship_announcement
-  title: വിദ്യാഭ്യാസ സ്കോളർഷിപ്പ് അറിയിപ്പ്
-  description: വിദ്യാഭ്യാസ സ്കോളർഷിപ്പ് അപേക്ഷകളെക്കുറിച്ചുള്ള അറിയിപ്പ്.
-  audio_url: audio/scholarship_announcement.mp3
-  thumbnail: images/program_thumbnails/default.jpg
-  date: '2025-03-28'
-- id: govt_technical_hs_admission
-  title: ഗവൺമെൻ്റ് ടെക്നിക്കൽ ഹൈസ്കൂൾ പ്രവേശനം
-  description: ഗവൺമെൻ്റ് ടെക്നിക്കൽ ഹൈസ്കൂളിലെ എട്ടാം ക്ലാസ് പ്രവേശനത്തെക്കുറിച്ചുള്ള അറിയിപ്പ്.
-  audio_url: audio/govt_technical_hs_admission.mp3
-  thumbnail: images/program_thumbnails/default.jpg
-  date: '2025-03-28'
 - id: plastic_surgery_interview
   title: 'പ്രകാശധാര: പ്ലാസ്റ്റിക് സർജറി'
   description: തിരുവനന്തപുരം ഗവൺമെൻറ് മെഡിക്കൽ കോളേജിലെ പ്ലാസ്റ്റിക് സർജറി വിഭാഗം പ്രൊഫസർ ഡോക്ടർ പ്രേംലാൽ എപിയുമായി എം കെ ദിലീപ് നടത്തുന്ന അഭിമുഖം.
@@ -106,3 +76,171 @@
   audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=ImfxhtzIdgU'
   thumbnail: images/program_thumbnails/default.jpg
   date: '2025-04-01'
+- id: news_bulletin-2025-04-06
+  title: വാർത്താ ബുള്ളറ്റിൻ
+  description: പ്രധാനമന്ത്രി നരേന്ദ്ര മോദിയുടെ ശ്രീലങ്കൻ സന്ദർശനം, ആഭ്യന്തര മന്ത്രി അമിത് ഷായുടെ പ്രസ്താവന, ദുരന്തനിവാരണ സഹായം, ആയുഷ്മാൻ ഭാരത് പദ്ധതി, കായിക വാർത്തകൾ തുടങ്ങിയവ ഉൾപ്പെടുന്ന വാർത്താ ബുള്ളറ്റിൻ.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=MON5EPD7aJ0'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: samakalikam-2025-04-06
+  title: 'സമകാലികം: ഒന്നാം ക്ലാസ് പ്രവേശന പ്രായം'
+  description: സംസ്ഥാനത്ത് ഒന്നാം ക്ലാസ് പ്രവേശനത്തിനുള്ള പ്രായം ആറു വയസ്സാക്കുന്നതുമായി ബന്ധപ്പെട്ട് വിദഗ്ധരുടെ അഭിപ്രായങ്ങളും വിശകലനങ്ങളും.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=PO4fM9wIybQ'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: childrens_story-2025-04-06
+  title: നാറാണത്ത് ഭ്രാന്തൻ
+  description: സി.പി. പള്ളിപ്പുറം എഴുതിയ 'നാറാണത്ത് ഭ്രാന്തൻ' എന്ന ബാലസാഹിത്യകൃതിയുടെ വായന.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=lDRBB5ev_Bw'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: kisan_vani-2025-04-06
+  title: കിസാൻ വാണി
+  description: അക്വാപോണിക്സ് കൃഷിരീതിയെക്കുറിച്ചുള്ള വിശദമായ വിവരണം.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=Xc6TAFpaHqA'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: janapadham-2025-04-06
+  title: 'ജനപദം: മാലിന്യ സംസ്കരണം'
+  description: കേരളത്തിലെ മാലിന്യ സംസ്കരണ രംഗത്തെ പുരോഗതിയെക്കുറിച്ചും സർക്കാരിന്റെ മാലിന്യമുക്തം നവകേരളം പദ്ധതിയെക്കുറിച്ചും വിശദമായ ചർച്ച. വിവിധ മാലിന്യ സംസ്കരണ മാതൃകകൾ, ഹരിത കർമ്മ സേനയുടെ പ്രവർത്തനങ്ങൾ, പ്ലാസ്റ്റിക് നിരോധനം, ഗ്രീൻ പ്രോട്ടോക്കോൾ തുടങ്ങിയവയെക്കുറിച്ചും പരിപാടിയിൽ പ്രതിപാദിക്കുന്നു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=7Bskoro14vA'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: chithrapathangam_interview-2025-04-06
+  title: ചിത്രപതംഗം അഭിമുഖം
+  description: സംഗീത സംവിധായകൻ ചിത്രപതംഗത്തെ കുറിച്ചുള്ള അഭിമുഖം. സംഗീത ജീവിതത്തിലെ  അനുഭവങ്ങൾ,  പാട്ടുകളെ കുറിച്ചുള്ള  ഓർമ്മകൾ,  സുജാതയെ പോലുള്ള  ഗായികമാരെ  പ്രോത്സാഹിപ്പിച്ചതിനെ കുറിച്ച്,  കമലഹാസന്  വേണ്ടി പാടിയ പാട്ടിനെ കുറിച്ച് എന്നിവയെല്ലാം ചർച്ച ചെയ്യുന്നു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=a4MzSe-INsA'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: chithrapathangam_interview_part2-2025-04-06
+  title: ചിത്രപതംഗം അഭിമുഖം - രണ്ടാം ഭാഗം
+  description: ചിത്രപതംഗത്തിന്റെ  ബാല്യകാലത്തെ കുറിച്ച്, സംഗീത പഠനത്തെ കുറിച്ച്,  ഹാസ്യഗാനങ്ങളെ കുറിച്ച്,  ആകാശവാണിയിലെ അനുഭവങ്ങളെ കുറിച്ച്,  എം കെ അർജുനനെ കുറിച്ചുള്ള  ഓർമ്മകൾ,  റഹ്മാനുമായുള്ള ബന്ധത്തെ കുറിച്ച്,  നാടകഗാനങ്ങളെ കുറിച്ച്,  പുതിയ ഗാനങ്ങളെ കുറിച്ചുള്ള  അഭിപ്രായം,  കുടുംബത്തെ കുറിച്ച് എന്നിവയെല്ലാം  ഈ ഭാഗത്ത് ചർച്ച ചെയ്യുന്നു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=J9Sb7K4RMiw'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: mk_arjunan_interview-2025-04-06
+  title: എം.കെ. അർജുനൻ അഭിമുഖം
+  description: എം.കെ. അർജുനന്റെ സംഗീത ജീവിതത്തെക്കുറിച്ചുള്ള ഒരു അഭിമുഖം. സുജാതയുടെ ആദ്യകാലങ്ങൾ, ജയഭാരതിയുടെ പാട്ടുകൾ, ചെമ്പകത്തേകൾ പോലത്തെ മാനത്ത് എന്ന ഗാനത്തിന്റെ രൂപീകരണം, പാട്ടുകാരുടെ വളർച്ചയിലെ അനുഭവങ്ങൾ എന്നിവയെക്കുറിച്ച് അദ്ദേഹം സംസാരിക്കുന്നു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=ljSs8hlIZoo'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: mk_arjunan_interview_part2-2025-04-06
+  title: എം.കെ. അർജുനൻ അഭിമുഖം (ഭാഗം 2)
+  description: ഇന്നത്തെ ഗാനങ്ങളെക്കുറിച്ചുള്ള അഭിപ്രായം, കവിതകളുടെ പ്രാധാന്യം, പുതിയ സംഗീത സംവിധായകർ, പാട്ടുകളിലെ ആവർത്തനങ്ങൾ, പാട്ടിന്റെ പല ട്യൂണുകൾ എന്നിവയെക്കുറിച്ച് എം.കെ. അർജുനൻ സംസാരിക്കുന്നു. എ.ആർ. റഹ്മാനുമായുള്ള ബന്ധത്തെക്കുറിച്ചും അദ്ദേഹം പങ്കുവെക്കുന്നു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=eFcknGLJi34'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: mk_arjunan_interview_part3-2025-04-06
+  title: എം.കെ. അർജുനൻ അഭിമുഖം (ഭാഗം 3)
+  description: ചിത്രങ്ങൾ മത്സരത്തിന് പോകാത്തതിനെക്കുറിച്ചും, അവാർഡുകൾ ലഭിക്കാത്തതിനെക്കുറിച്ചും എം.കെ. അർജുനൻ സംസാരിക്കുന്നു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=xO5LPqsmyxU'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: mk_arjunan_interview_part4-2025-04-06
+  title: എം.കെ. അർജുനൻ അഭിമുഖം (ഭാഗം 4)
+  description: ആകാശവാണിയുമായുള്ള ബന്ധം, താരാട്ടുപാട്ടുകൾ എന്നിവയെക്കുറിച്ച് എം.കെ. അർജുനൻ സംസാരിക്കുന്നു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=jDQ1ZsOaIV4'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: mk_arjunan_interview_part5-2025-04-06
+  title: എം.കെ. അർജുനൻ അഭിമുഖം (ഭാഗം 5)
+  description: ഹാസ്യഗാനങ്ങളെക്കുറിച്ചും, ചട്ടമ്പി കല്യാണിയിലെ ഗാനങ്ങളെക്കുറിച്ചും എം.കെ. അർജുനൻ സംസാരിക്കുന്നു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=rUX4QPoGBHc'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: mk_arjunan_interview_part6-2025-04-06
+  title: എം.കെ. അർജുനൻ അഭിമുഖം (ഭാഗം 6)
+  description: സംഗീതത്തിലുള്ള പ്രതീക്ഷകൾ, കുടുംബത്തെക്കുറിച്ച്, മക്കളുടെ സംഗീത താത്പര്യം, ഭാവി പദ്ധതികൾ എന്നിവയെക്കുറിച്ച് എം.കെ. അർജുനൻ സംസാരിക്കുന്നു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=zLkoGhH8xCs'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: thoman_interview-2025-04-06
+  title: തോമസ് ചേട്ടന്റെ അഭിമുഖം
+  description: തോമസ് ചേട്ടനുമായുള്ള അഭിമുഖം. കുടുംബവിശേഷങ്ങൾ, ജോലി, സാമൂഹിക പ്രവർത്തനങ്ങൾ എന്നിവയെക്കുറിച്ച് ചർച്ച ചെയ്യുന്നു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=vFtFNLrLGyY'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: thankamani_interview-2025-04-06
+  title: തങ്കമണിയുമായുള്ള അഭിമുഖം
+  description: തങ്കമണിയുമായുള്ള അഭിമുഖം. കുടുംബവിശേഷങ്ങൾ,  പഴയ സിനിമകളോടുള്ള ഇഷ്ടം എന്നിവയെക്കുറിച്ച് സംസാരിക്കുന്നു. നാടൻ പാട്ടും പാടുന്നു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=s-icntGWCm4'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: priya_interview-2025-04-06
+  title: പ്രിയയുമായുള്ള അഭിമുഖം
+  description: പ്രിയയുമായുള്ള അഭിമുഖം. കുടുംബവിശേഷങ്ങൾ,  സ്വർണ്ണപ്പൂച്ചോല എന്ന ഗാനത്തോടുള്ള ഇഷ്ടം എന്നിവയെക്കുറിച്ച് സംസാരിക്കുന്നു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=madTQ0iyinU'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: surabi-2025-04-06
+  title: സാഹിത്യ സുരഭി
+  description: അടരടരായ് ആശാൻ, ആശാൻ കൃതികൾ കല്പറ്റ നാരായണന്റെ വീക്ഷണത്തിൽ എന്നിവയെ കുറിച്ചുള്ള പ്രഭാഷണം, സോണി വർഗീസ് വാരനാടിന്റെ കവിതകൾ, കെ രതീഷ് എഴുതി അവതരിപ്പിക്കുന്ന കഥ എന്നിവ ഉൾപ്പെടുന്നു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=GZkzDUgUwg8'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: achante_watch_story-2025-04-06
+  title: അച്ഛൻറെ വാച്ച്
+  description: കെ രതീഷ് എഴുതി അവതരിപ്പിക്കുന്ന കഥ.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=EmMj2oM4W7U'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: sony_vargheese_poems-2025-04-06
+  title: സോണി വർഗീസ് വാരനാടിന്റെ കവിതകൾ
+  description: സോണി വർഗീസ് വാരനാടിന്റെ കവിതകൾ ആലപിക്കുന്നു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=rYq_Tig4PYo'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: chuttuvattam-2025-04-06
+  title: ചുറ്റുവട്ടം
+  description: തൃപ്പൂണിത്തറയിൽ നടന്ന ക്രാഫ്റ്റ് ഫെസ്റ്റിവലിലെ 'അഭിനയിക്കാതിരിക്കാം' എന്ന സെഷനിൽ കെ ആർ നാരായണൻ, പി ആർ ജിജോയ് എന്നിവർ പങ്കെടുക്കുന്നു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=08iKBb2_O5U'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: parliament_qa-2025-04-06
+  title: പാർലമെന്റിലെ ചോദ്യോത്തരവേള
+  description: പാർലമെന്റിലെ ചോദ്യോത്തരവേളയുടെ ശബ്ദലേഖനം.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=S9yWs-UWefs'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: parliament_questions_relay-2025-04-06
+  title: പാർലമെന്റിലെ ചോദ്യോത്തര വേള
+  description: പാർലമെന്റിലെ ചോദ്യോത്തര വേളയുടെ ശബ്ദലേഖനം.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=CESFuvFrpx4'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: parliament_news-2025-04-06
+  title: പാർലമെന്റ് വാർത്തകൾ
+  description: പാർലമെന്റ് 16 ബില്ലുകളും രാജ്യസഭ 14 ബില്ലുകളും പാസാക്കി. വഖഫ് ഭേദഗതി ബില്ലും മുസൽമാൻ വഖഫ് റദ്ദാക്കൽ ബില്ലും പാർലമെന്റ് അംഗീകരിച്ചു.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=7MmCQtjsBqg'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: international_news-2025-04-06
+  title: അന്താരാഷ്ട്ര വാർത്തകൾ
+  description: പ്രധാനമന്ത്രി നരേന്ദ്ര മോദി ശ്രീലങ്ക സന്ദർശിക്കും. ശ്രീലങ്കൻ പ്രസിഡന്റിന്റെ ക്ഷണപ്രകാരമാണ് സന്ദർശനം. ഉഭയകക്ഷി ബന്ധം ശക്തിപ്പെടുത്തുകയാണ് ലക്ഷ്യം.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=8_MbhRrzeJo'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: nilavara-2025-04-06
+  title: നിലവറ
+  description: എം എസ് ബാബുരാജിനെ കുറിച്ചുള്ള കെ ടി മുഹമ്മദിന്റെ അനുസ്മരണം
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=9CMcmvnZe5w'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: pakkanaarude_muramvilpana-2025-04-06
+  title: പാക്കനാരുടെ മുറം വിൽപന
+  description: നാരായണത്ത് ഭ്രാന്തൻ സിപ്പി പള്ളിപ്പുറം എഴുതിയ ബാലസാഹിത്യകൃതി 'പാക്കനാരുടെ മുറം വിൽപന'.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=UpS62rQh8n0'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: energy_conservation_discussion-2025-04-06
+  title: ഊർജ്ജ സംരക്ഷണം
+  description: ഊർജ്ജ സംരക്ഷണത്തെക്കുറിച്ചുള്ള ചർച്ചയും ശ്രോതാക്കളുടെ വിവിധ സംശയങ്ങൾക്കുള്ള വിദഗ്ദ്ധന്റെ മറുപടികളും.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=hJSbzPPF1iI'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
+- id: dental_health_talk-2025-04-06
+  title: കുട്ടികളുടെ ദന്ത സംരക്ഷണം
+  description: കുട്ടികളുടെ ദന്ത സംരക്ഷണത്തെക്കുറിച്ചുള്ള ഡോക്ടർ അനു ഹാരിസിന്റെ  വിശദമായ വിവരണം.
+  audio_url: 'Video uploaded successfully: https://www.youtube.com/watch?v=kRY5D46Ou9o'
+  thumbnail: images/program_thumbnails/default.jpg
+  date: '2025-04-06'
